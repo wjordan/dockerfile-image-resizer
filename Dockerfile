@@ -5,8 +5,8 @@ WORKDIR /image-server
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y curl build-essential && \
-    curl -sL https://deb.nodesource.com/setup | bash - && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs && \
+    curl -sL https://deb.nodesource.com/setup_iojs_2.x | bash - && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y iojs && \
     npm install -g wjordan/image-resizer && \
     image-resizer new && \
     npm install
