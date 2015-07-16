@@ -1,5 +1,5 @@
-FROM marcbachmann/libvips
-MAINTAINER Brendan Younger <brendan@brendanyounger.com>
+FROM wjordan/libvips
+MAINTAINER Will Jordan <will.jordan@gmail.com>
 
 WORKDIR /image-server
 
@@ -7,7 +7,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y curl build-essential && \
     curl -sL https://deb.nodesource.com/setup | sudo bash - && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs && \
-    npm install -g image-resizer && \
+    npm install -g wjordan/image-resizer && \
     image-resizer new && \
     npm install
 
