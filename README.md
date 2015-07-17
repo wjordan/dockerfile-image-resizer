@@ -1,4 +1,5 @@
-# [Dockerfile](https://registry.hub.docker.com/u/wjordan/image-resizer/) for image-resizer
+# [Dockerfile](https://registry.hub.docker.com/u/wjordan/image-resizer/) for [image-resizer](https://github.com/wjordan/image-resizer)
+[![](https://badge.imagelayers.io/wjordan/image-resizer:latest.svg)](https://imagelayers.io/?images=wjordan/image-resizer:latest 'wjordan/image-resizer:latest')
 
 Runs [image-resizer](https://github.com/wjordan/image-resizer).
 
