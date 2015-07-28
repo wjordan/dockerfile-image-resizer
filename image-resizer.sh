@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -37,4 +37,5 @@ apk del dev-dependencies
 rm -rf \
   /var/cache/apk/* \
   ${HOME}/.node-gyp/* \
-  /tmp/*
+  /tmp/* \
+  /image-server/node_modules/image-resizer-wjordan/test
