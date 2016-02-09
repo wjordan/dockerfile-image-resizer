@@ -1,0 +1,14 @@
+{
+  "name": "image-resizer-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "description": "My awesome image resizing service!",
+  "dependencies": {
+    "image-resizer-wjordan": "*",
+    "express": "*",
+    "lodash": "*",
+    "chalk": "*",
+    "sharp": "*"
+  }
+}
