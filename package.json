@@ -7,7 +7,6 @@
   "dependencies": {
     "image-resizer-wjordan": "*",
     "express": "*",
-    "lodash": "*",
     "chalk": "*",
     "sharp": "*"
   }
