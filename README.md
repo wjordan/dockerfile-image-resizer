@@ -11,7 +11,7 @@ Run the Docker image, publish port 3001 and provide configuration via environmen
 $ docker run --rm -ti \
   --name image-server \
   -p 3001:3001 \
-  -e DEFAULT_SOURCE=wikipedia
+  -e DEFAULT_SOURCE=wikipedia \
   wjordan/image-resizer
 ```
 

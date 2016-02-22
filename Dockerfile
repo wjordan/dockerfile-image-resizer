@@ -1,20 +1,9 @@
 FROM alpine:edge
+ADD will.jordan@gmail.com-56bf67f5.rsa.pub /etc/apk/keys/
 WORKDIR /opt/image-resizer
 COPY ./package.json /opt/image-resizer/
-RUN apk add \
-  --update \
-  --repository https://s3.amazonaws.com/wjordan-apk \
-  --allow-untrusted \
-  node-sharp && \
-  rm -rf /var/cache/apk/* && \
-  npm install --ignore-scripts --production && \
-  npm link sharp && \
-  rm -rf node_modules/image-resizer-wjordan/node_modules/sharp && \
-  npm install --production && \
-  npm cache clean && \
-  npm rm -g npm && \
-  rm -rf node_modules/image-resizer-wjordan/test
-
+COPY ./install.sh /tmp/install.sh
+RUN /tmp/install.sh
 ENV NODE_ENV=production
 COPY ./index.js /opt/image-resizer/
 EXPOSE 3001
