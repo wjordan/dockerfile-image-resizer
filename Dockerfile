@@ -1,5 +1,5 @@
 FROM alpine:edge
-ADD will.jordan@gmail.com-56bf67f5.rsa.pub /etc/apk/keys/
+ADD will.jordan@gmail.com-56ba6562.rsa.pub /etc/apk/keys/
 WORKDIR /opt/image-resizer
 COPY ./package.json /opt/image-resizer/
 COPY ./install.sh /tmp/install.sh
